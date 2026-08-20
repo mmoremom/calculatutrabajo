@@ -1,0 +1,1 @@
+@AGENTS.mdcd calculadora-web
