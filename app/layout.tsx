@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  verification: {
-    <meta name="google-site-verification" content="P751sSNrYBmxrIhFlATWnGhM_oYmxly5CtHe_fAupfw" />,
+  verificación: {
+    google: "P751sSNrYBmxrIhFlATWnGnM_oYmxly5CtHe_fAupfw",
   },
   metadataBase: new URL("https://calculatutrabajo.com"),
   title: "Calculadora de Finiquito y Sueldo Neto 2026 | España",
