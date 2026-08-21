@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://calculatutrabajo.vercel.app"),
   title: "Calculadora de Finiquito y Sueldo Neto 2026 | España",
   description: "Calcula tu sueldo neto y finiquito en España con estimaciones claras de IRPF y cotizaciones.",
+  keywords: [
+    "calculadora de finiquito",
+    "calculadora sueldo neto",
+    "finiquito 2026",
+    "nómina España",
+    "IRPF",
+    "salario neto",
+    "liquidación laboral"
+  ],
 };
 
 export default function RootLayout({
