@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  verificación: {
+  verification: {
     google: "P751sSNrYBmxrIhFlATWnGnM_oYmxly5CtHe_fAupfw",
   },
   metadataBase: new URL("https://calculatutrabajo.com"),
