@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,47 +16,21 @@ export const metadata: Metadata = {
   verification: {
     google: "P751sSNrYBmxrIhFlATWnGnM_oYmxly5CtHe_fAupfw",
   },
-metadataBase: new URL("https://calculatutrabajo.vercel.app"),
+  metadataBase: new URL("https://calculatutrabajo.vercel.app"),
   title: "Calculadora de Finiquito y Sueldo Neto 2026 | España",
-  description: "Calcula tu sueldo neto y finiquito en España...",
-    "calculadora de finiquito",
-    "calculadora sueldo neto",
-    "finiquito 2026",
-    "nómina España",
-    "IRPF",
-    "salario neto",
-    "liquidación laboral",
-  ],
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "Calculadora de Finiquito y Sueldo Neto 2026 | España",
-    description: "Simula tu nómina, retenciones y finiquito en España con una herramienta rápida, clara y orientada a la decisión financiera.",
-    type: "website",
-    url: "https://calculatutrabajo.com",
-    locale: "es_ES",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Calculadora de Finiquito y Sueldo Neto 2026 | España",
-    description: "Calcula tu sueldo neto y finiquito en España con estimaciones rápidas de nómina y liquidación laboral.",
-  },
+  description: "Calcula tu sueldo neto y finiquito en España con estimaciones claras de IRPF y cotizaciones.",
 };
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  themeColor: "#ffffff",
-};
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="es"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full bg-slate-50 text-slate-900">{children}</body>
+    <html lang="es">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
